@@ -3,7 +3,7 @@ import React from 'react'
 function Barchart() {
   return (
     <div class="flex flex-col items-center m-auto w-full max-w-screen-md p-6 pb-6 bg-white rounded-lg shadow-xl sm:p-8">
-		<h2 class="text-xl font-bold">Monthly Revenue</h2>
+		<h2 class="text-xl font-bold">Post Revenue</h2>
         <div class="flex items-end flex-grow w-full space-x-2 sm:space-x-3 mt-8">
 			<div class="relative flex flex-col items-center flex-grow pb-5 group">
 				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">100</span>
