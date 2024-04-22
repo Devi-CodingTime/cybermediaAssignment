@@ -1,59 +1,59 @@
 import React from 'react'
 
-function Barchart() {
+function Barchart({reaction}) {
+    console.log(reaction);
   return (
-    <div class="flex flex-col items-center m-auto w-full max-w-screen-md p-6 pb-6 bg-white rounded-lg shadow-xl sm:p-8">
-		<h2 class="text-xl font-bold">Post Revenue</h2>
+    <div class="flex flex-col items-center m-auto mt-5 w-full h-[20rem] max-w-screen-md p-6 pb-6 bg-white rounded-lg shadow-xl sm:p-8">
+		<h2 class=" text-lg font-bold mb-2 text-sky-950 underline">Post Revenue</h2>
         <div class="flex items-end flex-grow w-full space-x-2 sm:space-x-3 mt-8">
 			<div class="relative flex flex-col items-center flex-grow pb-5 group">
-				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">100</span>
-				<div class={`relative flex justify-center w-8 h-10 bg-cyan-300`}></div>
-				<span class="absolute bottom-0 text-xs font-bold">90</span>
+				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">{reaction?.angry_reactions?.summary?.total_count}</span>
+				<div class={`relative flex justify-center w-8 bg-cyan-300`} style={{height:`${reaction?.angry_reactions?.summary?.total_count}rem`}}></div>
+				<span class="absolute bottom-0 text-xs font-bold">angry</span>
 			</div>
 			<div class="relative flex flex-col items-center flex-grow pb-5 group">
-				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">200</span>
+				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">{reaction?.comments?.summary?.total_count}</span>
 
-				<div class={`relative flex justify-center w-8 h-10 bg-cyan-300`}></div>
-				<span class="absolute bottom-0 text-xs font-bold">300</span>
+				<div class={`relative flex justify-center w-8 bg-cyan-300`} style={{height:`${reaction?.comments?.summary?.total_count}rem`}}></div>
+				<span class="absolute bottom-0 text-xs font-bold">comments</span>
 			</div>
 			<div class="relative flex flex-col items-center flex-grow pb-5 group">
-				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">200</span>
+				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">{reaction?.haha_reactions?.summary?.total_count}</span>
 
-				<div class={`relative flex justify-center w-8 h-10 bg-cyan-300`}></div>
-				<span class="absolute bottom-0 text-xs font-bold">12</span>
+				<div class={`relative flex justify-center w-8 bg-cyan-300`} style={{height:`${reaction?.haha_reactions?.summary?.total_count}rem`}}></div>
+				<span class="absolute bottom-0 text-xs font-bold">haha</span>
 			</div>
 			<div class="relative flex flex-col items-center flex-grow pb-5 group">
-				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">899</span>
+				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">{reaction?.like_reactions?.summary?.total_count}</span>
 
-				<div class={`relative flex justify-center w-8 h-10 bg-cyan-300`}></div>
-				<span class="absolute bottom-0 text-xs font-bold">765</span>
+				<div class={`relative flex justify-center w-8 bg-cyan-300`}  style={{ height: `${reaction?.like_reactions?.summary?.total_count}rem` }}></div>
+				<span class="absolute bottom-0 text-xs font-bold">like</span>
 			</div>
 			<div class="relative flex flex-col items-center flex-grow pb-5 group">
-				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">776</span>
+				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">{reaction?.love_reactions?.summary?.total_count}</span>
 
-				<div class={`relative flex justify-center w-8 h-20 bg-cyan-300`}></div>
-				<span class="absolute bottom-0 text-xs font-bold">86</span>
+				<div class={`relative flex justify-center w-8 bg-cyan-300`} style={{height:`${reaction?.love_reactions?.summary?.total_count}rem`}}></div>
+				<span class="absolute bottom-0 text-xs font-bold">love</span>
 			</div>
             <div class="relative flex flex-col items-center flex-grow pb-5 group">
-				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">776</span>
+				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">{reaction?.reactions_total?.summary?.total_count}</span>
 
-				<div class={`relative flex justify-center w-8 h-20 bg-cyan-300`}></div>
-				<span class="absolute bottom-0 text-xs font-bold">86</span>
+				<div class={`relative flex justify-center w-8 bg-cyan-300`} style={{height:`${reaction?.reactions_total?.summary?.total_count}rem`}}></div>
+				<span class="absolute bottom-0 text-xs font-bold">reactions</span>
 			</div>
             <div class="relative flex flex-col items-center flex-grow pb-5 group">
-				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">776</span>
+				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">{reaction?.sad_reactions?.summary?.total_count}</span>
 
-				<div class={`relative flex justify-center w-8 h-20 bg-cyan-300`}></div>
-				<span class="absolute bottom-0 text-xs font-bold">86</span>
+				<div class={`relative flex justify-center w-8 bg-cyan-300`} style={{height:`${reaction?.sad_reactions?.summary?.total_count}rem`}}></div>
+				<span class="absolute bottom-0 text-xs font-bold">sad</span>
 			</div>
             <div class="relative flex flex-col items-center flex-grow pb-5 group">
-				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">776</span>
+				<span class="absolute top-0 hidden -mt-6 text-xs font-bold group-hover:block">{reaction?.wow_reactions?.summary?.total_count}</span>
 
-				<div class={`relative flex justify-center w-8 h-20 bg-cyan-300`}></div>
-				<span class="absolute bottom-0 text-xs font-bold">86</span>
+				<div class={`relative flex justify-center w-8 bg-cyan-300`} style={{height:`${reaction?.wow_reactions?.summary?.total_count}rem`}}></div>
+				<span class="absolute bottom-0 text-xs font-bold">wow</span>
 			</div>
 			
-			{/* h-${barItems?.Under500?.ItemCount?barItems?.Under500?.ItemCount*20:0} */}
 		</div> 
         <div class="flex w-full mt-3">
 			<div class="flex items-center ml-auto">
@@ -62,6 +62,7 @@ function Barchart() {
 			</div>
 		</div> 
    </div>
+
   )
 }
 
