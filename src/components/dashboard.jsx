@@ -49,6 +49,7 @@ function Dashboard({name,img}) {
       <div className="bg-white p-6 rounded-lg shadow-md  w-[20%]">
         <h2 className="text-lg font-semibold mb-2">Total Comments</h2>
         <p className="text-3xl font-bold">200</p>
+        
       </div>
       
       
