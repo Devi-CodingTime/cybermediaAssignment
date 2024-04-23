@@ -28,7 +28,10 @@ ACCESS TOKENS:
 Access tokens allow your app to access the Graph API. They typically perform two functions:
 1.	They allow your app to access a User's information without requiring the User's password. For example, your app needs a User's email to perform a function. If the User agrees to allow your app to retrieve their email address from Facebook, the User will not need to enter their Facebook password for your app to get their email address.
 2.	They allow us to identify your app, the User who is using your app, and the type of data the User has permitted your app to access.
+
+######
 APPROACH:
+######
 Create a Developer Account using Facebook API
 1.	GO to the Facebook Developer Website: Open your web browser and go to the Facebook for Developers website: developer.facebook.com.
 2.	Sign Up or Log In: If you already have a Facebook account, you can log in using your existing credentials. If not, you’ll need to sign up for a Facebook account.
@@ -62,6 +65,7 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
 
 ### `npm run eject`
 
