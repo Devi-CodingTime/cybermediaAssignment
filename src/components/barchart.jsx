@@ -3,7 +3,7 @@ import React from 'react'
 function Barchart({reaction}) {
     console.log(reaction);
   return (
-    <div class="flex flex-col items-center m-auto mt-5 w-full h-[20rem] max-w-screen-md p-6 pb-6 bg-white rounded-lg shadow-xl sm:p-8">
+    <div class="flex flex-col items-center m-auto mt-5 w-full min-h-[24rem] max-h-fit max-w-screen-md p-6 pb-6 bg-white rounded-lg shadow-xl sm:p-8 mb-0">
 		<h2 class=" text-lg font-bold mb-2 text-sky-950 underline">Post Revenue</h2>
         <div class="flex items-end flex-grow w-full space-x-2 sm:space-x-3 mt-8">
 			<div class="relative flex flex-col items-center flex-grow pb-5 group">
