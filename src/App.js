@@ -15,3 +15,7 @@ function App() {
 }
 
 export default App;
+
+
+// 
+// "react-facebook-login": "^4.1.1",
